@@ -23,6 +23,7 @@
 #include "spi.h"
 #include "tim.h"
 #include "usart.h"
+#include "usb_device.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -35,7 +36,7 @@
 #include "bf_display.h"
 #include <stdio.h>
 #include <string.h>
-// #include "usbd_cdc_if.h" // Uncomment after generating USB via CubeMX (Option A)
+#include "usbd_cdc_if.h" // Generated via CubeMX
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -121,6 +122,7 @@ int main(void)
   MX_USART1_UART_Init();
   MX_TIM4_Init();
   MX_SPI1_Init();
+  MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
   // 0. FORCIBLY CLAIM `PE3` AS OUPUT FOR VISUAL HEARTBEAT DIAGNOSTICS!
   __HAL_RCC_GPIOE_CLK_ENABLE();
@@ -272,14 +274,11 @@ int main(void)
         lastHeartbeat = ticks;
         
         // --- USB CDC TELEMETRY OUTPUT ---
-        // Uncomment the code below AFTER you have generated the USB code via CubeMX.
-        /*
         char usbBuf[128];
         sprintf(usbBuf, "IMU[%.2f, %.2f, %.2f] | RC_PKTS: %lu | ARMED: %d\r\n", 
                 imuData.gyro.x, imuData.gyro.y, imuData.gyro.z,
                 rc->packetCount, isArmed);
         CDC_Transmit_HS((uint8_t*)usbBuf, strlen(usbBuf));
-        */
     }
     
     // (HAL_Delay is removed to allow max-frequency PID processing for HITL!) 
