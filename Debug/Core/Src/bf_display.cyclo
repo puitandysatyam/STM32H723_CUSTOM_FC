@@ -1,0 +1,9 @@
+../Core/Src/bf_display.c:27:13:LCD_WriteCmd	1
+../Core/Src/bf_display.c:34:13:LCD_WriteData	1
+../Core/Src/bf_display.c:41:13:LCD_SetWindow	1
+../Core/Src/bf_display.c:56:6:LCD_Fill	7
+../Core/Src/bf_display.c:77:6:LCD_DrawChar8x8	9
+../Core/Src/bf_display.c:99:6:LCD_Print	2
+../Core/Src/bf_display.c:112:6:displayInit	1
+../Core/Src/bf_display.c:158:6:displayNextPage	1
+../Core/Src/bf_display.c:163:6:displayUpdate	8

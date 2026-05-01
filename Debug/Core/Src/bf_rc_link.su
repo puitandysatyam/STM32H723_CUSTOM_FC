@@ -1,0 +1,5 @@
+../Core/Src/bf_rc_link.c:21:6:rcLink_Init	8	static
+../Core/Src/bf_rc_link.c:42:6:rcLink_Update	16	static
+../Core/Src/bf_rc_link.c:108:11:rcLink_GetData	4	static
+../Core/Src/bf_rc_link.c:112:19:rcLink_GetInjectedSensors	4	static
+../Core/Src/bf_rc_link.c:120:6:rcLink_SendHITL	48	static,ignoring_inline_asm

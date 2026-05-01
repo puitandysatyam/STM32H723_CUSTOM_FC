@@ -1,0 +1,3 @@
+../Core/Src/bf_hitl.c:13:6:hitl_rx_callback	2
+../Core/Src/bf_hitl.c:25:6:hitl_read_imu	2
+../Core/Src/bf_hitl.c:37:6:hitl_tx_motors	1

@@ -1,0 +1,4 @@
+../Core/Src/bf_dshot.c:12:16:dshot_crc	24	static
+../Core/Src/bf_dshot.c:20:13:dshot_prepare_dma_buffer	40	static
+../Core/Src/bf_dshot.c:44:6:dshot_Init	8	static
+../Core/Src/bf_dshot.c:55:6:dshot_Write	32	static

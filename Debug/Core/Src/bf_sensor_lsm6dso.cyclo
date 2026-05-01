@@ -1,0 +1,4 @@
+../Core/Src/bf_sensor_lsm6dso.c:16:13:spiWriteReg	1
+../Core/Src/bf_sensor_lsm6dso.c:23:13:spiReadRegs	1
+../Core/Src/bf_sensor_lsm6dso.c:34:6:lsm6dso_Init	2
+../Core/Src/bf_sensor_lsm6dso.c:55:6:lsm6dso_Read	1

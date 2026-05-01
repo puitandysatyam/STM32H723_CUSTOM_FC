@@ -1,0 +1,2 @@
+../Core/Src/bf_mixer.c:5:6:mixerInit	1
+../Core/Src/bf_mixer.c:12:6:mixQuadX	4
